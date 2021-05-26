@@ -7,20 +7,23 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
             android:text="Your Information"
             android:textColor="#bdc5cc"
             android:textSize="32sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/fullNameText"
             app:layout_constraintEnd_toEndOf="@+id/fullNameText"
+            app:layout_constraintHorizontal_bias="0.484"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.745">
-        </TextView>
+            app:layout_constraintVertical_bias="0.479"></TextView>
+
         <TextView
             android:id="@+id/fullNameText"
             android:layout_width="260dp"

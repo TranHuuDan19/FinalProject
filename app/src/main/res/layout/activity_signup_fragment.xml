@@ -142,12 +142,12 @@
             app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
         <TextView
-            android:layout_width="150dp"
-            android:layout_height="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="Sign up"
             android:textAlignment="center"
             android:textColor="@color/white"
-            android:textSize="20sp"
+            android:textSize="21sp"
             app:layout_constraintBottom_toBottomOf="@+id/image_button_signup"
             app:layout_constraintEnd_toEndOf="@+id/image_button_signup"
             app:layout_constraintHorizontal_bias="0.49"
@@ -157,61 +157,35 @@
 
         </TextView>
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn_facebook"
-            android:layout_width="360dp"
-            android:layout_height="50dp"
-            android:background="@drawable/button_shape"
-            android:fontFamily="@font/sofia_m"
-            android:paddingHorizontal="30dp"
-            android:paddingVertical="10dp"
-            android:text="Connect with Facebook"
-            android:textColor="#3c5a97"
-            android:textSize="12sp"
-            app:backgroundTint="#ebeef4"
-            app:icon="@drawable/fb_icon"
-            app:iconGravity="textStart"
-            app:iconTint="@null"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/image_button_signup"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/image_button_signup"
-            app:layout_constraintTop_toBottomOf="@+id/image_button_signup"
-            app:layout_constraintVertical_bias="0.097" />
-
         <TextView
             android:id="@+id/tv_have_account"
-            android:layout_width="190dp"
+            android:layout_width="wrap_content"
             android:layout_height="30dp"
             android:layout_marginStart="62dp"
-            android:layout_marginEnd="1dp"
+            android:layout_marginEnd="2dp"
             android:layout_marginBottom="5dp"
             android:fontFamily="@font/sofia_m"
             android:text="I'm already a member,"
             android:textColor="@color/black"
-            android:textSize="14sp"
+            android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/tv_have_account_signin"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btn_facebook"
-            app:layout_constraintVertical_bias="0.803" />
+            app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
             android:id="@+id/tv_have_account_signin"
-            android:layout_width="65dp"
+            android:layout_width="wrap_content"
             android:layout_height="30dp"
-            android:layout_marginEnd="80dp"
+            android:layout_marginEnd="75dp"
             android:layout_marginBottom="5dp"
             android:fontFamily="@font/sofia_m"
             android:text="Sign in"
             android:textColor="#EF6594"
-            android:textSize="14sp"
+            android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/tv_have_account"
-            app:layout_constraintTop_toBottomOf="@+id/btn_facebook"
-            app:layout_constraintVertical_bias="0.803" />
+            app:layout_constraintStart_toEndOf="@+id/tv_have_account" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
 

@@ -74,14 +74,14 @@ class ForgotPasswordFragment: Fragment() {
                 auth?.sendPasswordResetEmail(edtEmail?.text.toString())
                 ?.addOnCompleteListener {
                     if(it.isSuccessful) {
-                        Toast.makeText(activity, "Reset password success! ", Toast.LENGTH_LONG).show()
+                        Toast.makeText(activity, "We  are send you a mail to reset your password, check your email box! ", Toast.LENGTH_LONG).show()
                         parentFragmentManager.commit {
                             setReorderingAllowed(true)
                             replace<LogInFragment>(R.id.fragment_container_view)
                             addToBackStack(null)
                         }
                     } else {
-                      Toast.makeText(activity, "Reset failed! ", Toast.LENGTH_LONG).show()
+                      Toast.makeText(activity, "Your email to reset password is not correct! ", Toast.LENGTH_LONG).show()
                     }
                 }
         }

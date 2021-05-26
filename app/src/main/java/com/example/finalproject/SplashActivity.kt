@@ -2,6 +2,7 @@ package com.example.finalproject
 
 import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
 import android.view.Window
 import android.view.WindowManager
 import android.view.animation.AnimationUtils
@@ -24,11 +25,13 @@ class SplashActivity: AppCompatActivity() {
         setContentView(R.layout.splash_activity)
         binding = DataBindingUtil.setContentView(this ,R.layout.splash_activity)
         AminationSplash()
-        binding.apply {
-            btnNext.setOnClickListener{
-                startActivity(Intent(this@SplashActivity, MainActivity::class.java))
-            }
-        }
+        Handler().postDelayed({
+            // start onboard one activity
+            startActivity(Intent(this@SplashActivity, MainActivity::class.java))
+            finish()
+
+        }, 3000)
+
     }
     private fun AminationSplash()
     {
@@ -39,11 +42,6 @@ class SplashActivity: AppCompatActivity() {
             var animation_welcome = AnimationUtils.loadAnimation(this@SplashActivity,R.anim.bottom_animation)
             tvWelcome.animation = animation_welcome
 
-            var animation_textNnext = AnimationUtils.loadAnimation(this@SplashActivity,R.anim.right_animation)
-            tvNext.animation = animation_textNnext
-
-            var animation_buttonNext = AnimationUtils.loadAnimation(this@SplashActivity,R.anim.left_animation)
-            btnNext.animation = animation_buttonNext
         }
     }
 }
