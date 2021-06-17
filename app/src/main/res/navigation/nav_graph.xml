@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph"
+    app:startDestination="@id/onlineSongFragment">
+
+    <fragment
+        android:id="@+id/onlineSongFragment"
+        android:name="com.example.musify.ui.fragments.OnlineSongFragment"
+        android:label="OnlineSongFragment">
+    </fragment>
+    <fragment
+        android:id="@+id/offlineSongFragment"
+        android:name="com.example.musify.ui.fragments.OfflineSongFragment"
+        android:label="OfflineSongFragment"
+        >
+    </fragment>
+    <fragment
+        android:id="@+id/detailSongFragment"
+        android:name="com.example.musify.ui.fragments.DetailSongFragment"
+        android:label="SongFragment"
+        />
+    <action android:id="@+id/globalActionToSongFragment"
+        app:destination="@+id/detailSongFragment"
+        app:enterAnim="@anim/slide_in_bottom"
+        app:exitAnim="@anim/wait_anim"
+        app:popExitAnim="@anim/slide_out_top"
+        app:popEnterAnim="@anim/wait_anim"
+        />
+</navigation>
